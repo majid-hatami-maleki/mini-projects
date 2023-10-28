@@ -1,13 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './components/app/App';
-import { ContextProvider } from './contexts/context';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./components/app/App";
+import { ExTrackerContextProvider } from "./contexts/ExpenseTrackerContext";
+import { ClockContextProvider } from "./contexts/ClockContext";
+import VowelCounterContextProvider from "./contexts/VowelCounterContext";
+import RHSGameContextProvider from "./contexts/RHSGameContext";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <ContextProvider>
-    <App/>
-    </ContextProvider>
+  <>
+    <RHSGameContextProvider>
+      <VowelCounterContextProvider>
+        <ExTrackerContextProvider>
+          <ClockContextProvider>
+            <App />
+          </ClockContextProvider>
+        </ExTrackerContextProvider>
+      </VowelCounterContextProvider>
+    </RHSGameContextProvider>
+  </>
 );
-
