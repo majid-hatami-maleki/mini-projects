@@ -1,0 +1,55 @@
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*display flex*/
+    gap: 40px;
+}
+.contact-container h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    color: var(--primaryColor);
+}
+.contact-container ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /*display flex*/
+    gap: 10px;
+}
+.contact-container ul li{
+    padding: 5px;
+}
+.contact-btns{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /*display flex*/
+    padding: 20px;
+    font-size: 3rem;
+    border: 1px solid var(--secondaryColor);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.4s ease-in;
+}
+.contact-btns:hover{
+    background-color: var(--secondaryColor);
+}
+#contact-phone-btn{
+    color: #C12E3B;
+}
+#contact-email-btn{
+    color: #1377C7;
+}
+#contact-discord-btn{
+    color: #5462EB;
+}
+#contact-linkedin-btn{
+    color: #0277B5;
+}

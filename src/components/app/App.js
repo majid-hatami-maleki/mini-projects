@@ -1,27 +1,22 @@
-import React, { useContext } from 'react'
-import './app.css'
-import { clockContexts } from '../../contexts/ClockContext'
-import { EXTrackerContexts } from '../../contexts/ExpenseTrackerContext'
-import { vowelCounterContexts } from '../../contexts/VowelCounterContext'
-import { RHSGameContexts } from '../../contexts/RHSGameContext'
-
+import React, { useContext } from "react";
+import "./app.css";
+import { BrowserRouter,Link,NavLink } from "react-router-dom";
+import Home from "../pages/home/Home";
+import Routers from "../../routes/Routers";
+import Header from "../header/Header";
+/*
+1- install react bootstrap for responsive
+2- introduce home screen
+*/
 export default function App() {
-    const clockContS= useContext(clockContexts)
-    const ExContS = useContext(EXTrackerContexts)
-    const VowelContS = useContext(vowelCounterContexts)
-    const RHSContS = useContext(RHSGameContexts)
   return (
-    <div className='app-container'>
-        <header>
-            <nav>
-                <h1>A collection of small projects</h1>
-                <ul>
-                    <li></li>
-                </ul>
-            </nav>
-        </header>
-        <main></main>
-        <footer></footer>
+    <div className="app-container">
+      <BrowserRouter>
+      <Header/>
+        <main>
+            <Routers/>
+        </main>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
