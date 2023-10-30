@@ -11,6 +11,17 @@ export default function App() {
     const VowelContS = useContext(vowelCounterContexts)
     const RHSContS = useContext(RHSGameContexts)
   return (
-    <div className='app-container'>App</div>
+    <div className='app-container'>
+        <header>
+            <nav>
+                <h1>A collection of small projects</h1>
+                <ul>
+                    <li></li>
+                </ul>
+            </nav>
+        </header>
+        <main></main>
+        <footer></footer>
+    </div>
   )
 }
