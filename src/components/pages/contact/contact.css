@@ -1,55 +1,56 @@
-.contact-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /*display flex*/
-    gap: 40px;
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*display flex*/
+  gap: 40px;
 }
-.contact-container h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3rem;
-    color: var(--primaryColor);
+.contact-container p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--primaryColor);
 }
-.contact-container ul{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    /*display flex*/
-    gap: 10px;
+.contact-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /*display flex*/
+  gap: 10px;
+  border: 1px solid var(--secondaryColor);
+  padding: 20px;
+  border-radius: 10px;
 }
-.contact-container ul li{
-    padding: 5px;
+.contact-container ul li {
+  padding: 5px;
 }
-.contact-btns{
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    /*display flex*/
-    padding: 20px;
-    font-size: 3rem;
-    border: 1px solid var(--secondaryColor);
-    cursor: pointer;
-    border-radius: 50%;
-    transition: all 0.4s ease-in;
+.contact-btns {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /*display flex*/
+  padding: 20px;
+  font-size: 3rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.4s ease-in;
 }
-.contact-btns:hover{
-    background-color: var(--secondaryColor);
+.contact-btns:hover {
+  background-color: var(--secondaryColor);
 }
-#contact-phone-btn{
-    color: #C12E3B;
+#contact-phone-btn {
+  color: #c12e3b;
 }
-#contact-email-btn{
-    color: #1377C7;
+#contact-email-btn a {
+  color: #1377c7;
 }
-#contact-discord-btn{
-    color: #5462EB;
+#contact-discord-btn a {
+  color: #5462eb;
 }
-#contact-linkedin-btn{
-    color: #0277B5;
+#contact-linkedin-btn a {
+  color: #0277b5;
 }
