@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./contact.css";
-import { BiSolidPhoneCall, BiLogoDiscordAlt } from "react-icons/bi";
-import { MdEmail, MdDoneAll } from "react-icons/md";
+import { MdDoneAll } from "react-icons/md";
 import { overallContexts } from "../../../contexts/overallContext";
 export default function Contact() {
   /*
@@ -13,21 +12,19 @@ export default function Contact() {
   const linkedInValues = contexts.contactUsObj.linkedin;
   const discordValues = contexts.contactUsObj.discord;
   const phoneNumberValue = contexts.contactUsObj.phNumber;
-  const emailAddress = contexts.contactUsObj.email
+  const emailValues = contexts.contactUsObj.email
+  const [resultContent , setResultContent] = useState('Click on icons')
   console.log(contexts);
   return (
     <div className="contact-container">
-      ~
-      <div className="clipboard-display">
-        <MdDoneAll />
-      </div>
-      <p>For contact us just choose an option and click on it</p>
       <ul>
         <li>
           <button
             className="contact-btns"
             id="contact-phone-btn"
-            onClick={phoneNumberValue.onClick()}
+            onClick={()=>{
+                setResultContent(phoneNumberValue.mergeInfos())
+            }}
           >
             {phoneNumberValue.icon}
           </button>
@@ -36,30 +33,39 @@ export default function Contact() {
           <button
             className="contact-btns"
             id="contact-email-btn"
-            onClick={emailAddress.onClick()}
+            onClick={()=>{
+                setResultContent(emailValues.mergeInfos())
+            }}
           >
-            <a href={emailAddress.emailUrl}>{emailAddress.icon}</a>
+            <a href={emailValues.emailUrl} target="_blank">{emailValues.icon}</a>
           </button>
         </li>
         <li>
           <button
             className="contact-btns"
             id="contact-discord-btn"
-            onClick={discordValues.onClick()}
+            onClick={()=>{
+                setResultContent(discordValues.mergeInfos())
+            }}
           >
-            <a href={discordValues.serverUrl}>{discordValues.icon}</a>
+            <a href={discordValues.serverUrl} target="_blank">{discordValues.icon}</a>
           </button>
         </li>
         <li>
           <button
             className="contact-btns"
             id="contact-linkedin-btn"
-            onClick={linkedInValues.onClick()}
+            onClick={()=>{
+                setResultContent(linkedInValues.mergeInfos())
+            }}
           >
-            <a href={linkedInValues.profileUrl}>{linkedInValues.icon}</a>
+            <a href={linkedInValues.profileUrl} target="_blank">{linkedInValues.icon}</a>
           </button>
         </li>
       </ul>
+      <div className="clipboard-display">
+        <p>{resultContent}</p>
+      </div>
     </div>
   );
 }

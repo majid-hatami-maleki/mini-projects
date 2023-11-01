@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   /*display flex*/
-  gap: 40px;
+  gap: 10px;
   position: relative;
 }
 .contact-container p {
@@ -12,29 +12,31 @@
   color: var(--primaryColor);
 }
 .contact-container ul {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   /*display flex*/
   gap: 10px;
-  border: 1px solid var(--secondaryColor);
-  padding: 20px;
+  padding: 5px;
   border-radius: 10px;
 }
 .contact-container ul li {
   padding: 5px;
 }
 .contact-btns {
+  /* width: 80px;
+  height: 80px; */
+  padding: 10px;
   background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   /*display flex*/
-  padding: 20px;
   font-size: 3rem;
-  border: 1px solid transparent;
+  border: 1px solid var(--secondaryColor);  
   cursor: pointer;
   border-radius: 50%;
   transition: all 0.4s ease-in;
@@ -43,28 +45,32 @@
   background-color: var(--secondaryColor);
 }
 #contact-phone-btn {
-  color: #c12e3b;
+  color: #00ff40;
+  line-height: 0.5;
 }
 #contact-email-btn a {
-  color: #1377c7;
+  color: #008cff;
+  line-height: 0.5;
 }
 #contact-discord-btn a {
-  color: #5462eb;
+  color: #6854eb;
+  line-height: 0.5;
 }
 #contact-linkedin-btn a {
-  color: #0277b5;
+  color: #00a6ff;
+  line-height: 0.5;
 }
-.clipboard-display{
-    width: 300px;
-    background-color: var(--blipBgColor);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    /*display flex*/
-    border-radius: 10px;
-    border: 1px solid black;
-    color: var(--secondaryColor);
-    position: absolute;
+.clipboard-display {
+  min-width: 400px;
+  background-color: var(--blipBgColor);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /*display flex*/
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  color: var(--primaryColor);
+  gap: 20px;
 }
