@@ -9,7 +9,7 @@ const overallContexts = createContext();
 
 const contactUsObj = {
   linkedin: {
-    name: "My linkedin",
+    name: "Linkedin",
     icon: <BiLogoLinkedinSquare />,
     profileUrl: "https://www.linkedin.com/in/majid-hatami-maleki-790257276/",
     mergeInfos: function () {
@@ -25,7 +25,7 @@ const contactUsObj = {
     },
   },
   phNumber: {
-    name: "phone number",
+    name: "Phone No",
     number: "(+98)-921 806 3950",
     icon: <BiSolidPhoneCall />,
     mergeInfos: function () {
@@ -33,7 +33,7 @@ const contactUsObj = {
     },
   },
   email: {
-    name: "outlook E-mail",
+    name: "E-mail",
     emailAddress: "majidhatamimaleki@outlook.com",
     emailUrl: `mailto:${"majidhatamimaleki@outlook.com"}?subject=${encodeURIComponent(
       "contact from github project"

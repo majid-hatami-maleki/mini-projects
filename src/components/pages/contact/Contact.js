@@ -3,11 +3,6 @@ import "./contact.css";
 import { MdDoneAll } from "react-icons/md";
 import { overallContexts } from "../../../contexts/overallContext";
 export default function Contact() {
-  /*
-        1- add contents for copy to btns
-        2- copy the contents on click
-        3-responsive page
- */
   const contexts = useContext(overallContexts);
   const linkedInValues = contexts.contactUsObj.linkedin;
   const discordValues = contexts.contactUsObj.discord;
@@ -22,6 +17,7 @@ export default function Contact() {
           <button
             className="contact-btns"
             id="contact-phone-btn"
+            title={phoneNumberValue.name}
             onClick={()=>{
                 setResultContent(phoneNumberValue.mergeInfos())
             }}
@@ -33,6 +29,7 @@ export default function Contact() {
           <button
             className="contact-btns"
             id="contact-email-btn"
+            title={emailValues.name}
             onClick={()=>{
                 setResultContent(emailValues.mergeInfos())
             }}
@@ -44,6 +41,7 @@ export default function Contact() {
           <button
             className="contact-btns"
             id="contact-discord-btn"
+            title={discordValues.name}
             onClick={()=>{
                 setResultContent(discordValues.mergeInfos())
             }}
@@ -55,6 +53,7 @@ export default function Contact() {
           <button
             className="contact-btns"
             id="contact-linkedin-btn"
+            title={linkedInValues.name}
             onClick={()=>{
                 setResultContent(linkedInValues.mergeInfos())
             }}
