@@ -1,11 +1,11 @@
 .contact-container {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   /*display flex*/
   gap: 40px;
+  position: relative;
 }
 .contact-container p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -53,4 +53,18 @@
 }
 #contact-linkedin-btn a {
   color: #0277b5;
+}
+.clipboard-display{
+    width: 300px;
+    background-color: var(--blipBgColor);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /*display flex*/
+    border-radius: 10px;
+    border: 1px solid black;
+    color: var(--secondaryColor);
+    position: absolute;
 }

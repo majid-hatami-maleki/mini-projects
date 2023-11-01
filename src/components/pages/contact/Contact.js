@@ -1,11 +1,7 @@
 import React, { useContext } from "react";
 import "./contact.css";
-import {
-  BiSolidPhoneCall,
-  BiLogoDiscordAlt,
-  BiLogoLinkedinSquare,
-} from "react-icons/bi";
-import { MdEmail } from "react-icons/md";
+import { BiSolidPhoneCall, BiLogoDiscordAlt } from "react-icons/bi";
+import { MdEmail, MdDoneAll } from "react-icons/md";
 import { overallContexts } from "../../../contexts/overallContext";
 export default function Contact() {
   /*
@@ -14,64 +10,53 @@ export default function Contact() {
         3-responsive page
  */
   const contexts = useContext(overallContexts);
+  const linkedInValues = contexts.contactUsObj.linkedin;
+  const discordValues = contexts.contactUsObj.discord;
+  const phoneNumberValue = contexts.contactUsObj.phNumber;
+  const emailAddress = contexts.contactUsObj.email
+  console.log(contexts);
   return (
     <div className="contact-container">
+      ~
+      <div className="clipboard-display">
+        <MdDoneAll />
+      </div>
       <p>For contact us just choose an option and click on it</p>
       <ul>
         <li>
           <button
             className="contact-btns"
             id="contact-phone-btn"
-            onClick={(e) => {
-              navigator.clipboard.writeText("+989218063950");
-            }}
+            onClick={phoneNumberValue.onClick()}
           >
-            <BiSolidPhoneCall />
+            {phoneNumberValue.icon}
           </button>
         </li>
         <li>
           <button
             className="contact-btns"
             id="contact-email-btn"
-            onClick={(e) => {
-              navigator.clipboard.writeText("majidhatamimaleki@outlook.com");
-            }}
+            onClick={emailAddress.onClick()}
           >
-            <a
-              href={`mailto:${"majidhatamimaleki@outlook.com"}?subject=${encodeURIComponent(
-                "contact"
-              )}`}
-            >
-              <MdEmail />
-            </a>
+            <a href={emailAddress.emailUrl}>{emailAddress.icon}</a>
           </button>
         </li>
         <li>
           <button
             className="contact-btns"
             id="contact-discord-btn"
-            onClick={(e) => {
-              navigator.clipboard.writeText("https://discord.gg/2zykGncH8r");
-            }}
+            onClick={discordValues.onClick()}
           >
-            <a href="https://discord.gg/2zykGncH8r">
-              <BiLogoDiscordAlt />
-            </a>
+            <a href={discordValues.serverUrl}>{discordValues.icon}</a>
           </button>
         </li>
         <li>
           <button
             className="contact-btns"
             id="contact-linkedin-btn"
-            onClick={(e) => {
-              navigator.clipboard.writeText(
-                "https://www.linkedin.com/in/majid-hatami-maleki-790257276/"
-              );
-            }}
+            onClick={linkedInValues.onClick()}
           >
-            <a href="https://www.linkedin.com/in/majid-hatami-maleki-790257276/">
-              <BiLogoLinkedinSquare />
-            </a>
+            <a href={linkedInValues.profileUrl}>{linkedInValues.icon}</a>
           </button>
         </li>
       </ul>
