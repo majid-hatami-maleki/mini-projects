@@ -44,15 +44,25 @@ const contactUsObj = {
     },
   },
 };
-
 const resultDisplayHandler = function (elementName, elementContent, icon) {
   let elemName = elementName;
   let elemContent = elementContent;
   return `${elemName}__${elemContent} - copied to your clipboard`;
 };
 export default function OverallContextProvider({ children }) {
+  const [homePage, setHomePage] = useState(true);
+  const [contactPage, setContactPage] = useState(false);
   return (
-    <overallContexts.Provider value={{ contactUsObj, resultDisplayHandler }}>
+    <overallContexts.Provider
+      value={{
+        contactUsObj,
+        resultDisplayHandler,
+        homePage,
+        setHomePage,
+        contactPage,
+        setContactPage,
+      }}
+    >
       {children}
     </overallContexts.Provider>
   );

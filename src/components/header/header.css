@@ -34,3 +34,9 @@ header nav ul li{
 header nav ul li a{
     color: var(--primaryColor);
 }
+.activePage{
+    border-bottom: 1px solid white;
+}
+.activePage a{
+   color: white !important;
+}
