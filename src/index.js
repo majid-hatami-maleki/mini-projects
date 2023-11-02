@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./components/app/App";
+import App from "./components/App";
 import { ExTrackerContextProvider } from "./contexts/ExpenseTrackerContext";
 import { ClockContextProvider } from "./contexts/ClockContext";
 import VowelCounterContextProvider from "./contexts/VowelCounterContext";

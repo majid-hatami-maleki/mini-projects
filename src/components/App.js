@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import "./app.css";
 import { BrowserRouter,Link,NavLink } from "react-router-dom";
-import Home from "../pages/home/Home";
-import Routers from "../../routes/Routers";
-import Header from "../header/Header";
+import Routers from "../routes/Routers";
+import Header from "./header/Header";
 /*
 1- install react bootstrap for responsive
 2- introduce home screen

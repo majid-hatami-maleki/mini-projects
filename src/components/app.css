@@ -3,6 +3,8 @@
     --blipBgColor : rgba(0, 0, 0, 0.114);
     --primaryColor : #0f87ff;
     --secondaryColor : #2c3451;
+    --appsPrimaryColor : orange;
+    --appsSecondaryColor : black;
 }
 .app-container{
     min-width: 100vw;

@@ -2,11 +2,11 @@ import React from 'react'
 import { Route,Routes } from 'react-router-dom'
 import Home from './../components/pages/home/Home'
 import Contact from '../components/pages/contact/Contact'
-import DigitalClockApp from '../components/pages/clock/DigitalClockApp'
-import RHSGame from '../components/pages/rhsGame/RHSGame'
-import VowelCounter from '../components/pages/vowelCounter/VowelCounter'
-import ExpenseTracker from '../components/pages/EX-tracker/ExpenseTracker'
-import NotePadApp from '../components/pages/notePad/NotePadApp'
+import DigitalClockApp from '../components/apps/clock/DigitalClockApp'
+import RHSGame from '../components/apps/rhsGame/RHSGame'
+import VowelCounter from '../components/apps/vowelCounter/VowelCounter'
+import ExpenseTracker from '../components/apps/EX-tracker/ExpenseTracker'
+import NotePadApp from '../components/apps/notePad/NotePadApp'
 export default function Routers() {
   return (
     <Routes>

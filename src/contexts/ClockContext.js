@@ -1,10 +1,11 @@
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 
 let clockContexts = createContext()
 
-function ClockContextProvider({children}) {
+
+function ClockContextProvider({children}) { 
   return (
-    <clockContexts.Provider value={'this is clock context'}>
+    <clockContexts.Provider value={{}}>
         {children}
     </clockContexts.Provider>
   )
