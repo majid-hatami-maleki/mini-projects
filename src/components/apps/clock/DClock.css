@@ -1,14 +1,4 @@
-.clock-container{
-    width: 100%;
-    background-color: var(--secondaryColor);
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /*display flex*/
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 .clock-container h2{
     width: 100%;
     color: var(--appsPrimaryColor);
