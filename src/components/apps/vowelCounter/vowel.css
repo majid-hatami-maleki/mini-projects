@@ -1,0 +1,37 @@
+.vowel-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*display flex*/
+    gap: 20px;
+}
+.vowel-container h2{
+    width: 100%;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--appsPrimaryColor);
+    color: var(--appsPrimaryColor);
+    padding: 20px 0;
+}
+.sub-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /*display flex*/
+    gap: 40px;
+}
+.sub-container textarea{
+    width: 600px;
+    height: 400px;
+    background-color: var(--secondaryColor);
+    resize: none;
+    border-color: black;
+    padding: 10px;
+
+}
+.sub-container textarea:focus{
+    outline: transparent;
+    color: silver;
+}
