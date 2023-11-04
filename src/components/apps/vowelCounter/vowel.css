@@ -18,9 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     /*display flex*/
-    gap: 40px;
 }
 .sub-container textarea{
     width: 600px;
@@ -29,9 +28,22 @@
     resize: none;
     border-color: black;
     padding: 10px;
+    border-bottom-color: transparent;
 
 }
 .sub-container textarea:focus{
     outline: transparent;
     color: silver;
+}
+.score-board{
+    width: 100%;
+    text-align: center;
+    background-color: var(--secondaryColor);
+    padding: 10px;
+    border: 1px solid black;
+    border-top-color: transparent;
+}
+.score-board p{
+    color: var(--appsPrimaryColor);
+    font-size: 0.8rem;
 }

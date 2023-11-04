@@ -9,7 +9,7 @@ export default function VowelCounter() {
     
   return (
     <div className="vowel-container">
-      <h2>vowel counter</h2>
+      <h2>vowels counter</h2>
       <div className="sub-container">
         <textarea cols="30" rows="10" value={contexts.input} onChange={e => {
             contexts.setInput(e.target.value)
