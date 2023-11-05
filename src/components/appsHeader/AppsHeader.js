@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './AHeader.css'
-import { NavLink } from 'react-router-dom'
-export default function AppsHeader() {
+import { NavLink , useParams} from 'react-router-dom'
+export default function AppsHeader(props) {
   return (
-    <div className='a-header-container'>
+    <div className={`a-header-container ${props.class}`}>
         <ul>
             <li>
                 <NavLink to={'/clock'}>digital-clock</NavLink>

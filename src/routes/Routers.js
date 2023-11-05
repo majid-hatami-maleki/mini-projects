@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route,Routes } from 'react-router-dom'
+import { Route,Routes , useParams } from 'react-router-dom'
 import Home from './../components/pages/home/Home'
 import Contact from '../components/pages/contact/Contact'
 import DigitalClockApp from '../components/apps/clock/DigitalClockApp'

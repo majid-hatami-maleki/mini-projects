@@ -13,7 +13,7 @@
 }
 .a-header-container ul li{
     width: 200px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     padding: 5px;
     border-radius: 5px;
     text-align: center;
@@ -21,6 +21,11 @@
 }
 .a-header-container ul li a{
     color: var(--appsPrimaryColor);
+    opacity: 0.4;
     text-transform: capitalize;
     display: block;
+    transition: all 0.2s ease-in;
+}
+.a-header-container ul li:hover a{
+    opacity: 1;
 }

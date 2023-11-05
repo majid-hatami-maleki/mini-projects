@@ -1,8 +1,4 @@
 
-.clock-container h2{
-    width: 100%;
-    color: var(--appsPrimaryColor);
-}
 .clock-display{
     min-width: 400px;
     padding: 30px;
@@ -12,4 +8,13 @@
     color: var(--appsPrimaryColor);
     font-weight: bold;
     background-color: var(--appsSecondaryColor);
+}
+.clock-header li:nth-child(1){
+    background-color: var(--appsPrimaryColor);
+    
+}
+.clock-header li:nth-child(1) a{
+    opacity: 1;
+    color: var(--appsSecondaryColor );
+    font-weight: bold;
 }

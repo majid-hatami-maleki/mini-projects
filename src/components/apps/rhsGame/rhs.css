@@ -1,0 +1,9 @@
+.rhs-header li:nth-child(2){
+    background-color: var(--appsPrimaryColor);
+    
+}
+.rhs-header li:nth-child(2) a{
+    opacity: 1;
+    color: var(--appsSecondaryColor );
+    font-weight: bold;
+}

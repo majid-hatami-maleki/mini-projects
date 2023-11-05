@@ -12,7 +12,7 @@ export default function VowelCounter() {
     
   return (
     <MainContainer>
-      <AppsHeader/>
+      <AppsHeader class={'vowel-header'}/>
       <div className="sub-container">
         <textarea cols="30" rows="10" value={contexts.input} onChange={e => {
             contexts.setInput(e.target.value)

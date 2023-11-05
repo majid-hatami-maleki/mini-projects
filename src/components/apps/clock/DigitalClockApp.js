@@ -3,6 +3,7 @@ import "./DClock.css";
 import { clockContexts } from "../../../contexts/ClockContext";
 import MainContainer from "../../appsContainer/MainContainer";
 import AppsHeader from './../../appsHeader/AppsHeader'
+import { useParams } from "react-router-dom";
 export default function DigitalClockApp() {
   const contexts = useContext(clockContexts);
 
@@ -23,7 +24,7 @@ export default function DigitalClockApp() {
   const seconds = time.getSeconds().toString().padStart(2, '0');
   return (
     <MainContainer>
-       <AppsHeader/>
+       <AppsHeader class={'clock-header'}/>
       <div className="clock-display">
         <span>{hours}</span> : <span>{minutes}</span> :
         <span>{seconds}</span>
