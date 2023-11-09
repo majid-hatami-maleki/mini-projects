@@ -1,9 +1,108 @@
-.rhs-header li:nth-child(2){
-    background-color: var(--appsPrimaryColor);
-    
+.rhs-header li:nth-child(2) {
+  background-color: var(--appsPrimaryColor);
 }
-.rhs-header li:nth-child(2) a{
-    opacity: 1;
-    color: var(--appsSecondaryColor );
-    font-weight: bold;
+.rhs-header li:nth-child(2) a {
+  opacity: 1;
+  color: var(--appsSecondaryColor);
+  font-weight: bold;
+}
+.rhs-container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*display flex*/
+  gap: 20px;
+}
+
+.actions-result-display {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /*display flex*/
+  gap: 20px;
+}
+.actions-result-display h1 {
+    width: 200px;
+  color: var(--appsPrimaryColor);
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.cpu-actions-result,
+.player-actions-result {
+  background-color: var(--appsPrimaryColor);
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /*display flex*/
+  border-radius: 50%;
+  position: relative;
+}
+.player-actions-result h2,
+.cpu-actions-result h2 {
+    font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--secondaryColor);
+  position: absolute;
+  top: 30px;
+
+}
+.cpu-actions-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /*display flex*/
+}
+
+.cpu-actions-result > * {   
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  /*ANIMATION*/
+}
+.player-actions-result > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    /*ANIMATION*/
+  }
+.player-actions-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /*display flex*/
+  gap: 10px;
+  padding: 30px;
+  border: 1px solid var(--appsPrimaryColor);
+  background-color: var(--appsSecondaryColor);
+  margin-top: 40px;
+
+}
+.player-actions-options button {
+  background-color: var(--appsPrimaryColor);
+  color: var(--appsSecondaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /*display flex*/
+  font-size: 3rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
 }
