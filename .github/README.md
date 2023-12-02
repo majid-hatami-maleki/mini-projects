@@ -5,7 +5,7 @@
 
 ## Installation
 To install this project, follow these steps:
-1. Clone the repository: git clone https://github.com/majid-hatami-maleki/vowel-counter.git
+1. Clone the repository: git clone https://github.com/majid-hatami-maleki/mini-projects.git
 2. Change to the project directory: cd to directory
 3. open files in your IDE
 
