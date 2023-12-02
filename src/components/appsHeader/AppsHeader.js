@@ -14,12 +14,6 @@ export default function AppsHeader(props) {
             <li>
                 <NavLink to={'/vwc'}>vowel-counter</NavLink>
             </li>
-            <li>
-                <NavLink to={'/EXTracker'}>expense-tracker</NavLink>
-            </li>
-            <li>
-                <NavLink to={'/noteP'}>take-note</NavLink>
-            </li>
         </ul>
     </div>
   )

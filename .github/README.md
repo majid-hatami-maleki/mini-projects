@@ -1,7 +1,7 @@
 ![Alt Text](banner.jpg)
 
-# 
-### description
+# mini projects
+### this repo includes mini projects
 
 ## Installation
 To install this project, follow these steps:
@@ -13,7 +13,7 @@ To install this project, follow these steps:
 - [![html][html-shield]][html-url]
 - [![css][css-shield]][css-url]
 - [![js][js-shield]][js-url]
-
+- [![react][react-shield]][react-url]
 
 ### My contact links
 

@@ -17,12 +17,6 @@ console.log(JSON.stringify(params))
         <li>
           <NavLink to="/vwc">vowel counter app</NavLink>
         </li>
-        <li>
-          <NavLink to="/EXTracker">expense tracker app</NavLink>
-        </li>
-        <li>
-          <NavLink to="/noteP">take notes app</NavLink>
-        </li>
       </ul>
     </div>
   );
