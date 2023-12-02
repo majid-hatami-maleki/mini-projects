@@ -1,9 +1,0 @@
-.note-header li:nth-child(5){
-    background-color: var(--appsPrimaryColor);
-    
-}
-.note-header li:nth-child(5) a{
-    opacity: 1;
-    color: var(--appsSecondaryColor );
-    font-weight: bold;
-}

@@ -1,10 +1,20 @@
 :root{
     --primaryBgColor : #1b2032;
-    --blipBgColor : rgba(0, 0, 0, 0.114);
+    --blipBgColor : #0000001d;
     --primaryColor : #0f87ff;
     --secondaryColor : #2c3451;
     --appsPrimaryColor : orange;
     --appsSecondaryColor : black;
+    --deActiveColor : #454d6b;
+    --deActiveBgColor : #262a3a;
+}
+* input[type="number"] {
+    -moz-appearance: textfield;
+  }
+* input[type="number"]::-webkit-outer-spin-button,
+* input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
 }
 .app-container{
     min-width: 100vw;
@@ -25,4 +35,24 @@ main{
     align-items: center;
     flex-direction: column;
     /*display flex*/
+}
+.deActiveBtn{
+    background-color: var(--deActiveBgColor);
+    color: var(--deActiveColor);
+    border-color: transparent;
+}
+.deActiveInput{
+    background-color: var(--deActiveBgColor);
+    color: var(--deActiveColor);
+    border-color: transparent;
+}
+.active-tab{
+    background-color: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    color : var(--appsPrimaryColor)
+}
+.de-active-tab{
+    background-color: var(--deActiveBgColor);
+    color: var(--deActiveColor);
 }
